@@ -1,0 +1,72 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/outfit-400.woff2') format('woff2'),
+        url('../fonts/outfit-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/outfit-700.woff2') format('woff2'),
+        url('../fonts/outfit-700.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    color: var(--color-grayish-blue);
+    background-color: var(--color-light-gray);
+}
+
+.qr-card {
+    max-width: 320px;
+    padding: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 20px;
+}
+
+.qr-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.qr-card__title {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-dark-blue);
+}
+
+.qr-card__text {
+    margin: 0 15px;
+}
